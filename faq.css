@@ -148,7 +148,7 @@ html {
 }
 
 .image__wrapper_inner {
-  background: url(./image/faq image/illustration-woman-online-desktop.svg);
+  background: url(illustration-woman-online-desktop.svg);
   height: 100%;
   background-repeat: no-repeat;
   background-position: 120% center;
