@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 /* -------Navigation Bar------- */
 #nav-bar
 {
@@ -26,7 +27,7 @@
 }
 .navbar
 {
-    background:#ec8a8a;
+    background:#0d3f61;
 }
 .navbar-toggler
 {
@@ -40,7 +41,11 @@
 }
 /* -------Navigation Bar------- */
 
-/*-- FAQ PAGE CSS start-->*/
+
+
+
+
+/*------- FAQ PAGE CSS start------->*/
 
  :root {
   --softRed: hsl(14, 88%, 65%);
@@ -65,7 +70,7 @@ html {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100vw;
-  background-color:#5d76ac;
+  background-color:#e4f9fd;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -201,46 +206,17 @@ html {
 }
 /*-- FAQ PAGE CSS end-->*/
 
+
+
+
+
 /* -----------footer--------- */
 footer{
   width: 100%;
-  background-color:#d6f4fa;
+  background-color:#ecf0f0;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-}
-.sec-1{
-  width: 100%;
-  padding: 20px 60px;
-}
-.backtotop{
-  padding: 15px;
-  background: #2f6e92;
-  color:black;
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-  position: relative;
-  text-shadow: 2px 1px black;
-}
-.backtotop a{
-  color: rgb(228, 227, 227) !important;
-  text-decoration: none !important;
-  text-transform: uppercase;
-}
-.backtotop::before{
-  content: '';
-  position: absolute;
-  border: 25px solid #2f6e92;
-  left: -35px;
-  border-left-color: transparent;
-}
-.backtotop::after{
-  content: '';
-  position: absolute;
-  border: 25px solid #2f6e92;
-  right: -35px;
-  border-right-color: transparent;
 }
 .sec-2{
   display: flex;
@@ -267,6 +243,7 @@ footer{
   color: rgba(0, 0, 0, 0.884);
   font-weight: 500;
   line-height: 24px;
+  font-size: 16px;
 }
 .sec-2 ul{
   list-style: none;
@@ -277,6 +254,7 @@ footer{
   text-align:left;
   color: rgba(0, 0, 0, 0.884);
   font-weight: 500;
+  font-size: 16px;
 }
 a{
   text-decoration: none !important;
@@ -312,7 +290,7 @@ i{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .sec-3 h2{
   color: black;
@@ -341,7 +319,7 @@ hr{
 .sec-4{
   display: flex;
   justify-content: center;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .sec-4 ul{
   list-style: none;
@@ -380,13 +358,13 @@ hr{
 }
 .sec-5{
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 .copyright{
   display: flex;
   justify-content: center;
   padding: 15px;
-  background: #1f5777;
+  background: #0d3f61;
   /* font-weight: bold; */
   font-size: 20px;
   text-align: center;
@@ -404,44 +382,12 @@ hr{
 
   footer{
       width: 100%;
-      background-color: #d6f4fa;
+      background-color:#ecf0f0;
       color: white;
       padding-left: 10px;
       padding-right: 10px;
   }
-  .sec-1{
-      width: 100%;
-      padding: 20px 60px;
-  }
-  .backtotop{
-      padding: 15px;
-      background: #2f6e92;
-      color:black;
-      font-size: 18px;
-      text-align: center;
-      font-weight: bold;
-      position: relative;
-      text-shadow: 2px 1px black;
-  }
-  .backtotop a{
-      color: rgb(228, 227, 227);
-      text-decoration: none;
-      text-transform: uppercase;
-  }
-  .backtotop::before{
-      content: '';
-      position: absolute;
-      border: 25px solid #2f6e92;
-      left: -35px;
-      border-left-color: transparent;
-  }
-  .backtotop::after{
-      content: '';
-      position: absolute;
-      border: 25px solid #2f6e92;
-      right: -35px;
-      border-right-color: transparent;
-  }
+  
   .sec-2{
       display: flex;
       justify-content: space-between ;
@@ -464,6 +410,7 @@ hr{
       margin-top: 10px;
       color: rgb(0,0,0,0.884);
       line-height: 24px;
+      font-size: 16px;
   }
   .sec-2 ul{
       list-style: none;
@@ -474,6 +421,7 @@ hr{
       text-align:left;
       color: rgba(0, 0, 0, 0.884);
       font-weight: 500;
+      font-size: 16px;
   }
   a{
       text-decoration: none;
@@ -581,7 +529,7 @@ hr{
       display: flex;
       justify-content: center;
       padding: 15px;
-      background: #2f6e92;
+      background: #0d3f61;
       color:rgba(228,227,227);
       font-size: 20px;
       text-align: center;
@@ -598,44 +546,12 @@ hr{
 @media (max-width: 600px){
   footer{
       width: 100%;
-      background-color: #d6f4fa;
+      background-color: #ecf0f0;
       color: white;
       padding-left: 10px;
       padding-right: 10px;
   }
-  .sec-1{
-      width: 100%;
-      padding: 20px 60px;
-  }
-  .backtotop{
-      padding: 15px;
-      background: #2f6e92;
-      color: black;
-      font-size: 18px;
-      text-align: center;
-      font-weight: bold;
-      position: relative;
-      text-shadow: 2px 1px black;
-  }
-  .backtotop a{
-      color: rgb(228, 227, 227);
-      text-decoration: none;
-      text-transform: uppercase;
-  }
-  .backtotop::before{
-      content: '';
-      position: absolute;
-      border: 25px solid #2f6e92;
-      left: -35px;
-      border-left-color: transparent;
-  }
-  .backtotop::after{
-      content: '';
-      position: absolute;
-      border: 25px solid #2f6e92;
-      right: -35px;
-      border-right-color: transparent;
-  }
+  
   .sec-2{
       display: flex;
       justify-content: space-between ;
@@ -652,32 +568,24 @@ hr{
       margin-top: 10px;
       text-align: center;
   }
-  /* .sec-2 h2:hover{
-      font-size: 22px;
-      transition: all 0.4s;
-      cursor: pointer;
-      text-shadow: 1px 1px #e84545;
-  } */
   .about-sec p{
       text-align: justify;
       margin-top: 10px;
       color: rgba(0, 0, 0, 0.884);
       line-height: 24px;
+      font-size: 16px;
   }
   .sec-2 ul{
       list-style: none;
   }
   .sec-2 ul li{
       padding: 5px;
+      font-size: 16px;
   }
   a{
       text-decoration: none;
       color: black;
   }
-  /* .sec-2 a:hover{
-      color: #e84545;
-  } */
-  
   .sec-2 h2::after{
       visibility: hidden;
       z-index: -100
@@ -768,7 +676,7 @@ hr{
       display: flex;
       justify-content: center;
       padding: 15px;
-      background: #1f5777;
+      background: #0d3f61;
       color: #fff;
       font-size: 18px;
       text-align: center;
@@ -788,4 +696,8 @@ hr{
       display: block;
       text-align: center!important;
   }
+  .sec-2 .ha{
+      text-align: center;
+  }
 }
+
