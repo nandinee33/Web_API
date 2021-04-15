@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="section-five">
+        <!--<div class="section-five1"><b>BECOME DONOR</b></div>-->
+        <h1><b>OpenWeatherMap<br>API</b></h1>
+        <p>Historical Weather & Weather<br>Forecasts</p>
+        <a href="docharity.php">Get Started</a>
+       
+    </section>
+    <section id="section-two">
+        <a href="#"><div class="circle"><i class="fas fa-search"></i></div></a>
+        <h1><u>REAL-TIME WEATHER DATA</u></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quas, consectetur amet ducimus nemo explicabo perferendis a aut molestiae itaque.</p>
+
+        <a href="#"><div class="circle"><i class="fas fa-truck"></i></div></a>
+        <h1><u>REAL-TIME WEATHER DATA</u></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quas, consectetur amet ducimus nemo explicabo perferendis a aut molestiae itaque.</p>
+    </section>
+
+    <section id="section-three">
+        <a href="#"><div class="circle"><i class="fas fa-cloud-sun"></i></div></a>
+        <h1><u>REAL-TIME WEATHER DATA</u></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quas, consectetur amet ducimus nemo explicabo perferendis a aut molestiae itaque.</p>
+
+        <a href="#"><div class="circle"><i class="fas fa-smile-beam"></i></div></a>
+        <h1><u>REAL-TIME WEATHER DATA</u></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quas, consectetur amet ducimus nemo explicabo perferendis a aut molestiae itaque.</p>
+    </section>
+    <!--=====================section-four==================-->
+    <section id="section-four">
+        <div class="box-1">
+            <h1>OPENWEATHERAPI</h1>
+            <h2>API Stats</h2>
+        </div>
+        <div class="box-2">
+            <div class="counter"></div>
+            <div class="progress">POPULARITY SCORE</div>
+        </div>
+        <div class="box-3">
+            <div class="counter_1"></div>
+            <div class="progress_1">LATENCY</div>
+        </div>
+        <div class="box-4">
+            <div class="counter_2"></div>
+            <div class="progress_2">SUCCESS RATE</div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var a=0;
+        var run = setInterval(frames,50);
+        function frames(){
+            a=a + 1;
+            if(a == 10){
+                clearInterval(run);
+            }
+                else{
+                    var counter = document.querySelector(".counter");
+                    counter.textContent = a + "/10"
+                }
+             }
+
+             var b=0;
+        var run_1 = setInterval(frames_1,5);
+        function frames_1(){
+            b=b + 1;
+            if(b == 142){
+                clearInterval(run_1);
+            }
+                else{
+                    var counter_1 = document.querySelector(".counter_1");
+                    counter_1.textContent = b + "ms"
+                }
+             }
+
+             var c=0;
+        var run_2 = setInterval(frames_2,10);
+        function frames_2(){
+            c=c + 1;
+            if(c == 72){
+                clearInterval(run_2);
+            }
+                else{
+                    var counter_2 = document.querySelector(".counter_2");
+                    counter_2.textContent = c + "%"
+                }
+             }
+    </script>
+</script>
+</body>
+</html>
