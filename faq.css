@@ -148,7 +148,7 @@ html {
 }
 
 .image__wrapper_inner {
-  background: url(illustration-woman-online-desktop.svg);
+  background: url(./image/faq image/illustration-woman-online-desktop.svg);
   height: 100%;
   background-repeat: no-repeat;
   background-position: 120% center;
@@ -171,7 +171,7 @@ html {
     height: 530px;
   }
   .image__wrapper {
-    background: url("bg-pattern-mobile.svg");
+    background: url("./image/faq image/bg-pattern-mobile.svg");
     background-repeat: no-repeat;
     background-position: center 590%;
   }
