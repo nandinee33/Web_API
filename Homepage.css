@@ -1,6 +1,48 @@
-#section-five{
+/* -------Navigation Bar------- */
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color: #ff9800!important;
+}
+.navbar
+{
+    background:#26272b;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color:white!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* -------Navigation Bar------- */
+
+/*============================setion-one=================*/
+#section-one{
 	position: relative; 
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,7 +51,7 @@
     background-size: cover;
 } 
 
-#section-five::before {
+#section-one::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -18,48 +60,53 @@
     left: 0px;
     background-color:rgba(37, 0, 139, 0.521);
 }
-#section-five h1 {
+#section-one h1 {
     margin-top: -10%;
 	position: relative;
 	color: #ffffff;  
 	font-size: 80px;
 	text-align: center;
   }
-  #section-five p {
+  #section-one p {
 	position: absolute;
 	color: #fff;  
 	font-size: 50px;
 	text-align: center;
 	margin-top: 10%;
   }
-#section-five a{
+#section-one a{
 	position: absolute;
 	align-items: center;
 	margin-top: 25%;
 	align-items: center;
 	width: 200px;
-	color: #fff;
-	text-align: center;
-	height: 35px;
+	color: #fff !important;
+	text-align: center !important;
+	height: 45px;
 	font-size: 25px;
 	text-decoration: none;
 	border: 2px solid #fff;
     border-radius: 20px;
 
 }
-#section-five a:hover{
-	background-color: #fff;
-	color: black;
+#section-one a:hover{
+	background-color:#fff;
+	color: black !important;
 }
 
-/*===================section-two=====================*/
+/*--=========================section-two========================*/
 #section-two{
-    margin-left: 10%;
     margin-top: 5%;
+    height: auto;
     width: 50%;
-    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left !important;
+    margin-bottom: 5% !important;
+    position: absolute;
 
 }
+
 #section-two .circle{
     border-radius: 50%;
     border:3px solid blue;
@@ -75,6 +122,7 @@
     margin-top: 30%;
     text-align: center;
     justify-content: center;
+    color: blue;
 
 }
 #section-two h1{
@@ -86,8 +134,8 @@
     margin-left: 18%;
     width: 48%;
 }
-#section-two a:hover{
-    color:white;
+#section-two .fas:hover{
+    color: white !important;
 }
 #section-two .circle:hover{
     border:3px solid blue;
@@ -95,20 +143,19 @@
 
 }
 
-/*==================section-three======================*/
-
+/*==========================section-three=====================*/
 #section-three{
-    margin-left: 10%;
-    margin-top: -22%;
-    width: 50%;
-    float: right;
+     margin-top: 5%;
+     height: auto;
+     width: 50%;
+     float: right !important;
+     position: relative;
 
 }
 #section-three .circle{
     
     border-radius: 50%;
     border:3px solid blue;
-    
     height: 100px;
     width: 100px;
     margin-top: 8%;
@@ -121,6 +168,7 @@
     margin-top: 30%;
     text-align: center;
     justify-content: center;
+    color: blue;
 
 }
 #section-three h1{
@@ -132,256 +180,322 @@
     margin-left: 18%;
     width: 48%;
 }
-#section-three a:hover{
+#section-three .fas:hover{
     color:white;
 }
 #section-three .circle:hover{
     border:3px solid blue;
     background-color: blue;
+}
+/*=========================section-four==========================*/
+#section-four{
+    margin-top: 35% !important;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./image/api_image.jpg");
+    background-size: cover;
 
 }
-/*=======================================section-four=========================*/
-#section-four{
-    margin-top: 40%;
+#section-four h1 {
+    margin-top: -10%;
+	position: relative;
+	color: black;  
+	font-size: 50px;
+	text-align: center;
+  }
+  #section-four p {
+	position: absolute;
+	color:black;  
+	font-size: 20px;
+	text-align: center;
+	margin-top: 2%;
+    width: 60%;
+  }
+  #section-four a{
+      color: blue !important;
+      text-decoration: underline !important;
+  }
+  /*====================================section-five================================*/
+  #section-five{
+    margin-top: 5%;
     width: 100%;
-    height: 60%;
+    height: 40vh;
 
 }
 /*============================box-1===============*/
-#section-four .box-1{
-    margin-left: 12%;
+#section-five .box-1{
+    margin-left: 16%;
 }
-#section-four .box-1 h1{
+#section-five .box-1 h1{
     font-size: 18px;
     color: rgba(0, 0, 0, 0.267);
     font-weight: lighter;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-#section-four .box-1 h2{
+#section-five .box-1 h2{
     font-size: 70px;
     color: rgba(0, 0, 0, 0.473);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*=======================box-2=========================*/
-#section-four .box-2{
-    height:60vh ;
+#section-five .box-2{
+    height:40vh ;
     width: 30%;
-    top: 0;
     
 }
-#section-four .box-2 .counter{
-    position: absolute;
-    margin-top:-13% ;
-    margin-left: 45%;
+/*#section-five .box-2 .counter{
+    /*position: absolute;
+    margin-top:-15% ;
+    margin-left: 120%;
     transform: translate(-50%,-50%);
     font-size: 90px;
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(0, 0, 0, 0.473);
 }
-#section-four .box-2 .progress{
-     position: absolute;
-      margin-top: -9%;
-      width: 10%;
-      margin-left: 40%;
-      font-size: 25px;
+#section-five .box-2 .progress{
+    position: absolute;
+      margin-top: 2%;
+      width: 40% !important;
+      /*margin-left: 120% !important;
+      margin-left: 3%;
+      font-size: 25px !important;
       font-weight: lighter;
-      color: rgba(0, 0, 0, 0.267);
+      color: rgba(0, 0, 0, 0.267) !important;
       font-family: sans-serif;
-  }
+      text-overflow: unset;
+  }*/
 /*=======================box-3=================*/
-  #section-four .box-3{
-    height:60vh ;
+  #section-five .box-3{
+    height:40vh ;
     width: 30%;
-    top: 0;
     
 }
-#section-four .box-3 .counter_1{
-    position: absolute;
-    margin-top:-40% ;
-    margin-left: 65%;
+#section-five .box-3 .counter_1{
+   /* position: absolute;*/
+    margin-top:-15% ;
+    margin-left: 140%;
     transform: translate(-50%,-50%);
     font-size: 70px;
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(0, 0, 0, 0.473);
 }
-#section-four .box-3 .progress_1{
-     position: absolute;
-      margin-top: -37%;
+#section-five .box-3 .progress_1{
+    /* position: absolute;*/
+      margin-top: -10%;
       width: 10%;
-      margin-left: 60%;
+      margin-left: 145%;
       font-size: 25px;
       font-weight: lighter;
       color: rgba(0, 0, 0, 0.267);
       font-family: sans-serif;
   }
   /*==============================box-4====================*/
-  #section-four .box-4{
-    height:60vh ;
+  #section-five .box-4{
+    height:40vh ;
     width: 30%;
-    top: 0;
     
     
 }
-#section-four .box-4 .counter_2{
-    position: absolute;
+#section-five .box-4 .counter_2{
+   /* position: absolute;*/
     margin-top:-72% ;
-    margin-left: 83%;
+    margin-left: 210%;
     transform: translate(-50%,-50%);
     font-size: 90px;
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(0, 0, 0, 0.473);
 }
-#section-four .box-4 .progress_2{
-     position: absolute;
-      margin-top: -68%;
+#section-five .box-4 .progress_2{
+     /*position: absolute;*/
+      margin-top: -15%;
       width: 10%;
-      margin-left: 78%;
+      margin-left: 220%;
       font-size: 25px;
       font-weight: lighter;
       color: rgba(0, 0, 0, 0.267);
       font-family: sans-serif;
+      
   }
+
+  /*======================================//////////////////====================*/
+ @media screen and (max-width: 1440px){
+    #section-five .box-4{
+        height:40vh ;
+        width: 30%;
+        
+        
+    }
+    #section-five .box-4 .counter_2{
+       /* position: absolute;*/
+        margin-top:-85% ;
+        margin-left: 210%;
+        transform: translate(-50%,-50%);
+        font-size: 90px;
+        font-weight: 400;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgba(0, 0, 0, 0.473);
+    }
+    #section-five .box-4 .progress_2{
+         /*position: absolute;*/
+          margin-top: -15%;
+          width: 10%;
+          margin-left: 220%;
+          font-size: 25px;
+          font-weight: lighter;
+          color: rgba(0, 0, 0, 0.267);
+          font-family: sans-serif;
+          
+      }
+    }
 
   /*================================responsive for 625px====================*/
   @media screen and (max-width: 625px){
-    #section-five{
-		position: relative; 
-		height: 50vh;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-image: url("https://c1.wallpaperflare.com/preview/264/421/89/child-children-girl-happy-thumbnail.jpg");
-		background-size: cover;
-		margin-left: 0%
-	} 
-	#section-five h1 {
-		position: relative;
-		color: #ffffff;  
-		font-size: 23px;
-		/*line-height: 0.9;*/
-		text-align: center;
-		margin-top: -50%;
-	  }
-	  #section-five p {
-		position: absolute;
-		color: #fff;  
-		font-size: 20px;
-		/*line-height: 0.9;*/
-		text-align: center;
-		margin-top: 15%;
-	  }
-	#section-five a{
-		position: absolute;
-		align-items: center;
-		margin-top:55%;
-		display: block;
-		align-items: center;
-		width: 200px;
-		color: #fff;
-		text-align: center;
-		height: 30px;
-		font-size: 15px;
-		text-decoration: none;
-		border: 2px solid #fff;
-		padding-top: 2px;
-	
-	}
-    /*===========================section-two===================*/
-    #section-two{
-        margin-left: 15%;
-        margin-top: 5%;
-        width: 70%;
-        float: left;
-    
-    }
-    #section-two .circle{
-        margin-left: 15%;
-    }
-    #section-two h1{
-        margin-top: 5%;
-        margin-left: 18%;
-        
-    }
-    /*====================section-three=============================*/
-    #section-three{
-        margin-left: -15%;
-        margin-top: 0%;
-        width: 60%;
-    
-    }
-    #section-three .circle{
-        margin-left: -15%;
-    }
-    #section-three h1{
-        margin-top: 2%;
-        margin-left: -15%;
-        width: 80%;
-        
-    }
-    #section-three p{
-        margin-left: -15%;
-        width: 55%;
-    }
-    /*=============================section-four=======================*/
-    #section-four{
-        margin-top: 330%;
+    #section-one{
+        position: relative; 
+        height: 75vh;
         width: 100%;
-        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://c1.wallpaperflare.com/preview/264/421/89/child-children-girl-happy-thumbnail.jpg");
+        background-size: cover;
+    } 
+    #section-one h1 {
+        margin-top: -35%;
+        position: relative;
+        color: #ffffff;  
+        font-size: 40px;
+        text-align: center;
+      }
+      #section-one p {
+        position: absolute;
+        color: #fff;  
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10%;
+      }
+    #section-one a{
+        position: absolute;
+        align-items: center;
+        margin-top: 40%;
+        align-items: center;
+        width: 180px;
+        color: #fff !important;
+        text-align: center !important;
+        height: 45px;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
     
     }
-    /*=====================box-1====================*/
-    /*============================box-1===============*/
-#section-four .box-1{
-    margin-left: 30%;
-}
-#section-four .box-1 h1{
-    margin-top: 2%;
-}
-#section-four .box-1 h2{
-    margin-top: -5%;
-}
-/*=============box-2========================*/
-#section-four .box-2{
-    margin-top:35%;
-    
-}
-#section-four .box-2 .counter{
-    margin-left: 50%;
-}
-#section-four .box-2 .progress{
-    margin-left: 30%;
-      margin-top: 2%;
-  }
+    /*--=========================section-two========================*/
 
-  /*=====================box-3==================*/
-  #section-four .box-3{
-    height:60vh ;
+    /*--=========================section-two========================*/
+#section-two{
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5% !important;
+
+}
+
+/*==========================section-three=====================*/
+#section-three{
+    margin-top: 90%;
+    width: 100%;
+}
+
+/*=========================section-four==========================*/
+#section-four{
+    margin-top: 35% !important;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("api_image.jpg");
+    background-size: cover;
+
+}
+#section-four h1 {
+    margin-top: -25%;
+	position: relative;
+	color: black;  
+	font-size: 45px;
+	text-align: center;
+  }
+  #section-four p {
+	position: absolute;
+	font-size: 15px;
+	margin-top: 8%;
+    width: 60%;
+  }
+  #section-four a{
+      color: blue !important;
+      text-decoration: underline !important;
+  }
+/*--========================section-five============================*/
+  #section-five{
+    margin-top: 5%;
+    width: 100%;
+    height: 20vh;
+
+}
+/*============================box-1===============*/
+#section-five .box-1{
+    margin-left: 8%;
+}
+#section-five .box-1 h1{
+    margin-top: 10%;
+    font-size: 17px;
+}
+#section-five .box-1 h2{
+    font-size: 30px;
+}
+
+/*=======================box-3=================*/
+  #section-five .box-3{
+    height:20vh ;
     width: 30%;
-    margin-top: -15%;
     
 }
-#section-four .box-3 .counter_1{
-    margin-top:-40% ;
-    margin-left: 50%;
+#section-five .box-3 .counter_1{
+    margin-top:-10% ;
+    margin-left: 130%;
+    font-size: 35px;
 }
-#section-four .box-3 .progress_1{
-     
-      margin-left: 35%;
-      margin-top: -30%;
-
+#section-five .box-3 .progress_1{
+      margin-top: -10%;
+      width: 10%;
+      margin-left: 135%;
+      font-size: 14px;
   }
-/*====================box-4====================*/
-#section-four .box-4 .counter_2{
-    margin-top:-88% ;
-    margin-left: 45%;
+  /*==============================box-4====================*/
+  #section-five .box-4{
+    height:20vh;
+    width: 30%;   
 }
-#section-four .box-4 .progress_2{
-      margin-top: -68%;
-      margin-left: 35%;
+#section-five .box-4 .counter_2{
+    margin-top:-100%;
+    margin-left: 260%;
+    font-size: 40px;
+}
+#section-five .box-4 .progress_2{
+      margin-top: -25%;
+      width: 10%;
+      margin-left: 260%;
+      font-size: 14px;
+      
   }
- }
+  }
