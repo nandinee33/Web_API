@@ -27,7 +27,7 @@
 }
 .navbar
 {
-    background:#0d3f61;
+    background:#26272b;
 }
 .navbar-toggler
 {
@@ -213,7 +213,7 @@ html {
 /* -----------footer--------- */
 footer{
   width: 100%;
-  background-color:#ecf0f0;
+  background-color:#26272b;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -232,7 +232,7 @@ footer{
 }
 .sec-2 h2{
   font-size: 20px;
-  color:black;
+  color:white;
   font-weight: bold;
   text-transform: uppercase;
   /* padding-bottom: 10px; */
@@ -240,8 +240,7 @@ footer{
 .about-sec p{
   text-align: justify;
   margin-top: 10px;
-  color: rgba(0, 0, 0, 0.884);
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.884);
   line-height: 24px;
   font-size: 16px;
 }
@@ -252,13 +251,13 @@ footer{
   padding: 5px;
   display: block;
   text-align:left;
-  color: rgba(0, 0, 0, 0.884);
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.884);
+  /* font-weight: 500; */
   font-size: 16px;
 }
 a{
   text-decoration: none !important;
-  color: black !important;
+  color:white !important;
 }
 .sec-2 a:hover{
   color: #e84545 !important;
@@ -279,10 +278,10 @@ a{
   width: 60px;
 }
 span{
-  color: black;
+  color: white;
 }
 i{
-  color: black;
+  color: white;
   font-size: 20px;
   margin-right: 10px;
 }
@@ -293,7 +292,7 @@ i{
   /* padding: 5px; */
 }
 .sec-3 h2{
-  color: black;
+  color:white;
   font-size: 26px;
   padding: 0px;
 }
@@ -301,17 +300,17 @@ i{
   display: inline-block;
   padding: 10px 25px;
   font-size: 20px;
-  color: black;
+  color: white;
   font-weight: bold;
   background-color: rgba(238, 29, 29, 0.842);
   margin: 10px;
   border-radius: 20px;
 }
 .sec-3 a:hover{
-  background-color:#2f6e92;
+  background-color:orange;
   box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
-  text-shadow: 2px 1px black;
-  color: rgb(228, 227, 227)!important;
+  text-shadow: 2px 1px white;
+  color: rgb(15, 15, 15)!important;
 }
 hr{
   opacity: 0.2;
@@ -342,18 +341,33 @@ hr{
   text-align: center;
 }
 .sec-4 ul li:nth-child(1){
-  background-color:#35559b;
+  background-color:#424242;
 }
 .sec-4 ul li:nth-child(2){
-  background-color:#2fa3fc;
+  background-color:#424242;
 }
 .sec-4 ul li:nth-child(3){
-  background-color:#e24833;
+  background-color:#424242;
 }
 .sec-4 ul li:nth-child(4){
-  background-color:#0382c7;
+  background-color:#424242;
 }
 .sec-4 ul li:nth-child(5){
+  background-color:#424242;
+}
+.sec-4 ul li:nth-child(1):hover{
+  background-color:#35559b;
+}
+.sec-4 ul li:nth-child(2):hover{
+  background-color:#2fa3fc;
+}
+.sec-4 ul li:nth-child(3):hover{
+  background-color:#e24833;
+}
+.sec-4 ul li:nth-child(4):hover{
+  background-color:#0382c7;
+}
+.sec-4 ul li:nth-child(5):hover{
   background-color:#1a1c22;
 }
 .sec-5{
@@ -364,25 +378,20 @@ hr{
   display: flex;
   justify-content: center;
   padding: 15px;
-  background: #0d3f61;
+  background: black;
   /* font-weight: bold; */
   font-size: 20px;
   text-align: center;
   text-shadow: 2px 1px black;
   color: rgb(228, 227, 227);
 }
-.sec-5 a{
-  text-decoration: none;
-  color:black;
-}
-
 
 /* --------------First breakpoint 1000px------------ */
 @media (max-width:1000px){
 
   footer{
       width: 100%;
-      background-color:#ecf0f0;
+      background-color:#26272b;
       color: white;
       padding-left: 10px;
       padding-right: 10px;
@@ -401,14 +410,14 @@ hr{
   }
   .sec-2 h2{
       font-size: 20px;
-      color:black;
+      color:white;
       text-transform: uppercase;
       /* padding-bottom: 10px; */
   }
   .about-sec p{
       text-align: justify;
       margin-top: 10px;
-      color: rgb(0,0,0,0.884);
+      color: rgba(255, 255, 255, 0.884);
       line-height: 24px;
       font-size: 16px;
   }
@@ -419,13 +428,13 @@ hr{
       padding: 5px;
       display: block;
       text-align:left;
-      color: rgba(0, 0, 0, 0.884);
-      font-weight: 500;
+      color: rgba(255, 255, 255, 0.884);
+      /* font-weight: 500; */
       font-size: 16px;
   }
   a{
       text-decoration: none;
-      color: black;
+      color: white;
   }
   .sec-2 a:hover{
       color: #e84545;
@@ -446,10 +455,10 @@ hr{
       width: 60px;
   }
   span{
-      color: black;
+      color:white;
   }
   i{
-      color: black;
+      color: white;
       font-size: 20px;
       margin-right: 10px;
   }
@@ -460,7 +469,7 @@ hr{
       padding: 15px;
   }
   .sec-3 h2{
-      color:black;
+      color:white;
       font-size: 24px;
       padding: 0px;
   }
@@ -468,15 +477,15 @@ hr{
       display: inline-block;
       padding: 10px 25px;
       font-size: 20px;
-      color: black;
+      color: white;
       background-color: rgba(238, 29, 29, 0.842);
       margin: 10px;
       border-radius: 20px;
   }
   .sec-3 a:hover{
-      background-color:#2f6e92;
+      background-color:orange;
       box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
-      text-shadow: 2px 1px black;
+      text-shadow: 2px 1px rgb(255, 255, 255);
       color: rgb(228, 227, 227);
   }
   hr{
@@ -506,21 +515,6 @@ hr{
       line-height: 20px;
       text-align: center;
   }
-  .sec-4 ul li:nth-child(1){
-      background-color:#35559b;
-  }
-  .sec-4 ul li:nth-child(2){
-      background-color:#2fa3fc;
-  }
-  .sec-4 ul li:nth-child(3){
-      background-color:#e24833;
-  }
-  .sec-4 ul li:nth-child(4){
-      background-color:#0382c7;
-  }
-  .sec-4 ul li:nth-child(5){
-      background-color:#1a1c22;
-  }
   .sec-5{
       width: 100%;
       padding: 20px;
@@ -529,15 +523,15 @@ hr{
       display: flex;
       justify-content: center;
       padding: 15px;
-      background: #0d3f61;
+      background: black;
       color:rgba(228,227,227);
       font-size: 20px;
       text-align: center;
-      text-shadow: 2px 1px black;
+      text-shadow: 2px 1px rgb(0, 0, 0);
   }
   .sec-5 a{
       text-decoration: none;
-      color:black;
+      color:white;
   }
 }
 
@@ -546,7 +540,7 @@ hr{
 @media (max-width: 600px){
   footer{
       width: 100%;
-      background-color: #ecf0f0;
+      background-color: #26272b;
       color: white;
       padding-left: 10px;
       padding-right: 10px;
@@ -563,7 +557,7 @@ hr{
   }
   .sec-2 h2{
       font-size: 20px;
-      color:black;
+      color:white;
       text-transform: uppercase;
       margin-top: 10px;
       text-align: center;
@@ -571,7 +565,7 @@ hr{
   .about-sec p{
       text-align: justify;
       margin-top: 10px;
-      color: rgba(0, 0, 0, 0.884);
+      color: rgba(255, 255, 255, 0.884);
       line-height: 24px;
       font-size: 16px;
   }
@@ -584,17 +578,17 @@ hr{
   }
   a{
       text-decoration: none;
-      color: black;
+      color: white;
   }
   .sec-2 h2::after{
       visibility: hidden;
       z-index: -100
   }
   span{
-      color: black;
+      color:white;
   }
   i{
-      color: black;
+      color: white;
       font-size: 20px;
       margin-right: 10px;
   }
@@ -605,7 +599,7 @@ hr{
       padding: 15px;
   }
   .sec-3 h2{
-      color:black;
+      color:white;
       font-size: 20px;
       padding: 0px;
   }
@@ -613,15 +607,15 @@ hr{
       display: inline-block;
       padding: 10px 20px;
       font-size: 15px;
-      color: black;
+      color: rgb(255, 255, 255);
       background-color: rgba(238, 29, 29, 0.842);
       margin: 10px;
       border-radius: 20px;
   }
   .sec-3 a:hover{
-      background-color:#2f6e92;
+      background-color:orange;
       box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
-      text-shadow: 2px 1px black;
+      text-shadow: 2px 1px rgb(255, 255, 255);
       color: rgb(228, 227, 227);
   }
   hr{
@@ -652,22 +646,6 @@ hr{
       line-height: 18px;
       text-align: center;
   }
-  .sec-4 ul li:nth-child(1){
-      background-color:#35559b;
-  }
-  .sec-4 ul li:nth-child(2){
-      background-color:#2fa3fc;
-  }
-  .sec-4 ul li:nth-child(3){
-      background-color:#e24833;
-  }
-  .sec-4 ul li:nth-child(4){
-      background-color:#0382c7;
-  }
-  .sec-4 ul li:nth-child(5){
-      background-color:#1a1c22;
-  }
-
   .sec-5{
       width: 100%;
       padding: 20px;
@@ -676,7 +654,7 @@ hr{
       display: flex;
       justify-content: center;
       padding: 15px;
-      background: #0d3f61;
+      background: black;
       color: #fff;
       font-size: 18px;
       text-align: center;
@@ -685,7 +663,7 @@ hr{
   }
   .sec-5 a{
       text-decoration: none;
-      color: black;
+      color: white;
   }
   .link-1,.link-2 , .link-3{
       text-align: center!important;
