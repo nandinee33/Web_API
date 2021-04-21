@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  <style>
+    table,td,th{
+      border:1px solid black;
+      height: 40px;
+    }
+    th{
+      background-color: rgb(158, 155, 155);
+    }
+    td{
+      background-color: rgb(233, 229, 229);
+    }
+    table{
+      width:80%;
+      border-collapse: collapse;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    input[type=text]{
+     
+    margin-left: 200px;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    }
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  margin: 4px 700px;
+  
+ 
+  cursor: pointer;
+}
+
+
+.button1 {font-size: 10px;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h4{
+  text-align: center;
+  background-color:black;
+  font-size: 25px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+}
+
+.edit a {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+ 
+}
+
+.edit a:hover{
+  background-color: red;
+}
+  </style>
+</head>
+<body>
+  
+ 
+  <div class="container">
+    <h1>StudentDetail API</h1>
+    <h2>This is the url for API:<a href="#" >http://localhost:3000/student</a></h2><br>
+    <h4>Student Names with their cpi and universityrollno</h4>
+   <div class="center" ><button class="button button1" id="myBtn">API docs</button></div>
+   
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+<!-- The Modal ends-->
+    
+    <div class="container">
+     <br><br>
+     <table id="myTable">
+        <thead>
+          <tr>
+            
+            <th>student name</th>
+            <th>
+              CPI
+            </th>
+            <th>University rollno</th>
+             
+          </tr>
+        </thead>
+        
+        <tbody id="data">
+    
+        </tbody>
+      </table>
+    </div>
+  <script>
+    
+    
+    fetch('http://localhost:3000/student').then(
+      res=>{
+        res.json().then(
+          data=>{
+            console.log(data);
+            if(data.length >0){
+              var temp="";
+              //----star for loop
+              data.forEach((u)=>{
+                temp +="<tr>";
+                  
+                  temp +="<td>" +u.name+"</td>";
+                  temp +="<td>" +u.CPI+"</td>";
+                  temp +="<td>" +u.universityrollno+"</td><tr>";
+              })
+              //----close for loop
+              document.getElementById("data").innerHTML=temp;
+            }
+          }
+        )
+      }
+    )
+    
+   
+    
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+
+
+      
+
+     </script>
+
+
+<div class="container">
+  
+  <h4>Student Names with their id,cpi and universityrollno</h4>
+ <div class="center"> <button class="button button1" id="myBtn1">API docs</button></div><br>
+  
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <span class="close1">&times;</span>
+  <p>Some text in the Modal..</p>
+</div>
+
+</div>
+<!-- The Modal ends-->
+ 
+<br><br>
+  <div class="container1">
+
+    <table id="myTable1">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>student name</th>
+          <th>
+            CPI
+          </th>
+          <th>University rollno</th>
+        </tr>
+      </thead>
+      <tbody id="data1">
+  
+      </tbody>
+    </table>
+  </div>
+<script>
+  
+  
+  fetch('http://localhost:3000/student').then(
+    res=>{
+      res.json().then(
+        data1=>{
+          console.log(data1);
+          if(data1.length >0){
+            var temp="";
+            //----star for loop
+            data1.forEach((u)=>{
+              temp +="<tr>";
+                temp +="<td>" +u._id+"</td>";
+                temp +="<td>" +u.name+"</td>";
+                temp +="<td>" +u.CPI+"</td>";
+                temp +="<td>" +u.universityrollno+"</td><tr>";
+            })
+            //----close for loop
+            document.getElementById("data1").innerHTML=temp;
+          }
+        }
+      )
+    }
+  )
+  
+ 
+  
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal1.style.display = "none";
+}
+}
+
+
+
+
+
+    
+
+   </script>
+     <h4>Student Details you can Edit and Delete</h4>
+     <div class="center"><button class="button button1" id="myBtn2">API docs</button></div><br>
+  
+
+     <!-- The Modal -->
+     <div id="myModal2" class="modal">
+     
+     <!-- Modal content -->
+     <div class="modal-content">
+       <span class="close2">&times;</span>
+       <p>Some text in the Modal..</p>
+     </div>
+     
+     </div>
+     <!-- The Modal ends-->
+ 
+     
+    <div class="edit"><a href="demo.html">Delete</a><br>
+     <a href="https://www.postman.com/" >Edit</a></div> 
+
+
+     <script>
+       // Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal1.style.display = "none";
+}
+}
+
+     </script>
+    
+ 
+  
+ 
+ </div>
+</body>
+</html>
