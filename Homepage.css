@@ -196,7 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("./image/api_image.jpg");
+    background-image: url("./image/api_image1.jpg");
     background-size: cover;
 
 }
@@ -248,28 +248,6 @@
     width: 30%;
     
 }
-/*#section-five .box-2 .counter{
-    /*position: absolute;
-    margin-top:-15% ;
-    margin-left: 120%;
-    transform: translate(-50%,-50%);
-    font-size: 90px;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgba(0, 0, 0, 0.473);
-}
-#section-five .box-2 .progress{
-    position: absolute;
-      margin-top: 2%;
-      width: 40% !important;
-      /*margin-left: 120% !important;
-      margin-left: 3%;
-      font-size: 25px !important;
-      font-weight: lighter;
-      color: rgba(0, 0, 0, 0.267) !important;
-      font-family: sans-serif;
-      text-overflow: unset;
-  }*/
 /*=======================box-3=================*/
   #section-five .box-3{
     height:40vh ;
@@ -279,7 +257,7 @@
 #section-five .box-3 .counter_1{
    /* position: absolute;*/
     margin-top:-15% ;
-    margin-left: 140%;
+    margin-left: 150%;
     transform: translate(-50%,-50%);
     font-size: 70px;
     font-weight: 400;
@@ -290,7 +268,7 @@
     /* position: absolute;*/
       margin-top: -10%;
       width: 10%;
-      margin-left: 145%;
+      margin-left: 155%;
       font-size: 25px;
       font-weight: lighter;
       color: rgba(0, 0, 0, 0.267);
@@ -306,9 +284,9 @@
 #section-five .box-4 .counter_2{
    /* position: absolute;*/
     margin-top:-72% ;
-    margin-left: 210%;
+    margin-left: 225%;
     transform: translate(-50%,-50%);
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(0, 0, 0, 0.473);
@@ -317,7 +295,7 @@
      /*position: absolute;*/
       margin-top: -15%;
       width: 10%;
-      margin-left: 220%;
+      margin-left: 230%;
       font-size: 25px;
       font-weight: lighter;
       color: rgba(0, 0, 0, 0.267);
@@ -355,6 +333,455 @@
           
       }
     }
+
+    /*--===========================responsive fore 9000px-========================*/
+@media screen and (max-width: 1300px){
+    /*--=================section-one======================*/
+    #section-one{
+        position: relative; 
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://c1.wallpaperflare.com/preview/264/421/89/child-children-girl-happy-thumbnail.jpg");
+        background-size: cover;
+    } 
+    #section-one h1 {
+        margin-top: -20%;
+        position: relative;
+        color: #ffffff;  
+        font-size: 50px;
+        text-align: center;
+      }
+      #section-one p {
+        position: absolute;
+        color: #fff;  
+        font-size: 28px;
+        text-align: center;
+        margin-top: 8%;
+      }
+    #section-one a{
+        position: absolute;
+        align-items: center;
+        margin-top: 30%;
+        align-items: center;
+        width: 180px;
+        color: #fff !important;
+        text-align: center !important;
+        height: 45px;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
+    
+    }
+    /*--==============================section-two====================*/
+    #section-two{
+        margin-top: 5%;
+        height: auto;
+        width: 50%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left !important;
+        margin-bottom: 5% !important;
+        position: absolute;
+    
+    }
+    
+    #section-two .circle{
+        border-radius: 50%;
+        border:3px solid blue;
+        height: 75px;
+        width: 75px;
+        margin-top: 8%;
+    }
+    #section-two .circle .fas{
+        
+        height: 75px;
+        width: 75px;
+        font-size: 30px;
+        margin-top: 30%;
+        text-align: center;
+        justify-content: center;
+        color: blue;
+    
+    }
+    #section-two h1{
+        margin-top: -15%;
+        margin-left: 22%;
+        font-size: 25px;
+        
+    }
+    #section-two p{
+        margin-left: 22%;
+        width: 48%;
+        font-size: 16px;
+    }
+    #section-two .fas:hover{
+        color: white !important;
+    }
+    #section-two .circle:hover{
+        border:3px solid blue;
+        background-color: blue;
+    
+    }
+
+/*==========================section-three=====================*/
+#section-three{
+    margin-top: 5%;
+    height: auto;
+    width: 50%;
+    float: right !important;
+    position: relative;
+
+}
+#section-three .circle{
+   
+   border-radius: 50%;
+   border:3px solid blue;
+   height: 70px;
+   width: 70px;
+   margin-top: 8%;
+}
+#section-three .circle .fas{
+   
+   height: 70px;
+   width: 70px;
+   font-size: 30px;
+   margin-top: 30%;
+   text-align: center;
+   justify-content: center;
+   color: blue;
+
+}
+#section-three h1{
+   margin-top: -15%;
+   margin-left: 22%;
+   font-size: 25px;
+   
+}
+#section-three p{
+   margin-left: 22%;
+   width: 48%;
+   font-size: 16px;
+}
+#section-three .fas:hover{
+   color:white;
+}
+#section-three .circle:hover{
+   border:3px solid blue;
+   background-color: blue;
+}
+/*=========================section-four==========================*/
+#section-four{
+    margin-top: 35% !important;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+   /* display: flex;*/
+    align-items: center;
+    justify-content: center;
+    background-image: url("./image/api_image.jpg");
+    background-size: cover;
+
+}
+#section-four h1 {
+    margin-top: -10%;
+	position: relative;
+	color: black;  
+	font-size: 40px;
+	text-align: center;
+  }
+  #section-four p {
+	position: absolute;
+	font-size: 20px;
+	margin-top: 8%;
+    width: 60%;
+  }
+  #section-four a{
+      color: blue !important;
+      text-decoration: underline !important;
+  }
+/*--========================section-five============================*/
+  #section-five{
+    margin-top: 5%;
+    width: 100%;
+    height: 20vh;
+
+}
+/*============================box-1===============*/
+#section-five .box-1{
+    margin-left: 8%;
+}
+#section-five .box-1 h1{
+    margin-top: 10%;
+    font-size: 17px;
+}
+#section-five .box-1 h2{
+    font-size: 30px;
+}
+/*=======================box-3=================*/
+#section-five .box-3{
+    height:20vh ;
+    width: 30%;
+    
+}
+#section-five .box-3 .counter_1{
+    margin-top:-10% ;
+    margin-left: 150%;
+    font-size: 35px;
+}
+#section-five .box-3 .progress_1{
+      margin-top: -8%;
+      width: 10%;
+      margin-left: 155%;
+      font-size: 14px;
+  }
+  /*==============================box-4====================*/
+  #section-five .box-4{
+    height:20vh;
+    width: 30%;   
+}
+#section-five .box-4 .counter_2{
+    margin-top:-40%;
+    margin-left: 260%;
+    font-size: 40px;
+}
+#section-five .box-4 .progress_2{
+      margin-top: -10%;
+      width: 10%;
+      margin-left: 260%;
+      font-size: 14px;
+      
+  }
+
+}
+
+
+/*--===========================responsive fore 9000px-========================*/
+@media screen and (max-width: 900px){
+    /*--=================section-one======================*/
+    #section-one{
+        position: relative; 
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://c1.wallpaperflare.com/preview/264/421/89/child-children-girl-happy-thumbnail.jpg");
+        background-size: cover;
+    } 
+    #section-one h1 {
+        margin-top: -25%;
+        position: relative;
+        color: #ffffff;  
+        font-size: 50px;
+        text-align: center;
+      }
+      #section-one p {
+        position: absolute;
+        color: #fff;  
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10%;
+      }
+    #section-one a{
+        position: absolute;
+        align-items: center;
+        margin-top: 40%;
+        align-items: center;
+        width: 180px;
+        color: #fff !important;
+        text-align: center !important;
+        height: 45px;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
+    
+    }
+    /*--==============================section-two====================*/
+    #section-two{
+        margin-top: 5%;
+        height: auto;
+        width: 50%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left !important;
+        margin-bottom: 5% !important;
+        position: absolute;
+    
+    }
+    
+    #section-two .circle{
+        border-radius: 50%;
+        border:3px solid blue;
+        height: 70px;
+        width: 70px;
+        margin-top: 8%;
+    }
+    #section-two .circle .fas{
+        
+        height: 70px;
+        width: 70px;
+        font-size: 30px;
+        margin-top: 30%;
+        text-align: center;
+        justify-content: center;
+        color: blue;
+    
+    }
+    #section-two h1{
+        margin-top: -15%;
+        margin-left: 22%;
+        font-size: 25px;
+        
+    }
+    #section-two p{
+        margin-left: 22%;
+        width: 48%;
+        font-size: 16px;
+    }
+    #section-two .fas:hover{
+        color: white !important;
+    }
+    #section-two .circle:hover{
+        border:3px solid blue;
+        background-color: blue;
+    
+    }
+
+/*==========================section-three=====================*/
+#section-three{
+    margin-top: 5%;
+    height: auto;
+    width: 50%;
+    float: right !important;
+    position: relative;
+
+}
+#section-three .circle{
+   
+   border-radius: 50%;
+   border:3px solid blue;
+   height: 70px;
+   width: 70px;
+   margin-top: 8%;
+}
+#section-three .circle .fas{
+   
+   height: 70px;
+   width: 70px;
+   font-size: 30px;
+   margin-top: 30%;
+   text-align: center;
+   justify-content: center;
+   color: blue;
+
+}
+#section-three h1{
+   margin-top: -15%;
+   margin-left: 22%;
+   font-size: 25px;
+   
+}
+#section-three p{
+   margin-left: 22%;
+   width: 48%;
+   font-size: 16px;
+}
+#section-three .fas:hover{
+   color:white;
+}
+#section-three .circle:hover{
+   border:3px solid blue;
+   background-color: blue;
+}
+/*=========================section-four==========================*/
+#section-four{
+    margin-top: 35% !important;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+   /* display: flex;*/
+    align-items: center;
+    justify-content: center;
+    background-image: url("./image/api_image.jpg");
+    background-size: cover;
+
+}
+#section-four h1 {
+    margin-top: -20%;
+	position: relative;
+	color: black;  
+	font-size: 40px;
+	text-align: center;
+  }
+  #section-four p {
+	position: absolute;
+	font-size: 20px;
+	margin-top: 8%;
+    width: 60%;
+  }
+  #section-four a{
+      color: blue !important;
+      text-decoration: underline !important;
+  }
+/*--========================section-five============================*/
+  #section-five{
+    margin-top: 5%;
+    width: 100%;
+    height: 20vh;
+
+}
+/*============================box-1===============*/
+#section-five .box-1{
+    margin-left: 8%;
+}
+#section-five .box-1 h1{
+    margin-top: 10%;
+    font-size: 17px;
+}
+#section-five .box-1 h2{
+    font-size: 30px;
+}
+/*=======================box-3=================*/
+#section-five .box-3{
+    height:20vh ;
+    width: 30%;
+    
+}
+#section-five .box-3 .counter_1{
+    margin-top:-10% ;
+    margin-left: 150%;
+    font-size: 35px;
+}
+#section-five .box-3 .progress_1{
+      margin-top: -10%;
+      width: 10%;
+      margin-left: 155%;
+      font-size: 14px;
+  }
+  /*==============================box-4====================*/
+  #section-five .box-4{
+    height:20vh;
+    width: 30%;   
+}
+#section-five .box-4 .counter_2{
+    margin-top:-58%;
+    margin-left: 260%;
+    font-size: 40px;
+}
+#section-five .box-4 .progress_2{
+      margin-top: -16%;
+      width: 10%;
+      margin-left: 260%;
+      font-size: 14px;
+      
+  }
+
+}
 
   /*================================responsive for 625px====================*/
   @media screen and (max-width: 625px){
@@ -414,17 +841,16 @@
     margin-top: 90%;
     width: 100%;
 }
-
 /*=========================section-four==========================*/
 #section-four{
     margin-top: 35% !important;
     position: relative;
     height: 50vh;
     width: 100%;
-    display: flex;
+   /* display: flex;*/
     align-items: center;
     justify-content: center;
-    background-image: url("api_image.jpg");
+    background-image: url("./image/api_image.jpg");
     background-size: cover;
 
 }
@@ -659,7 +1085,7 @@
           color: blue !important;
           text-decoration: underline !important;
       }
-      /*--================================section-five===================================--*/
+      /*---=============================section-five==============================--*/
       #section-five{
         margin-top: 5%;
         width: 100%;
@@ -668,14 +1094,14 @@
     }
     /*============================box-1===============*/
     #section-five .box-1{
-        margin-left: 8%;
+        margin-left: 7%;
     }
     #section-five .box-1 h1{
         margin-top: 10%;
-        font-size: 17px;
+        font-size: 10px;
     }
     #section-five .box-1 h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     
     /*=======================box-3=================*/
@@ -685,15 +1111,15 @@
         
     }
     #section-five .box-3 .counter_1{
-        margin-top:-10% ;
+        margin-top:-30% ;
         margin-left: 130%;
-        font-size: 35px;
+        font-size: 27px;
     }
     #section-five .box-3 .progress_1{
-          margin-top: -10%;
+          margin-top: -20%;
           width: 10%;
           margin-left: 135%;
-          font-size: 14px;
+          font-size: 12px;
       }
       /*==============================box-4====================*/
       #section-five .box-4{
@@ -701,121 +1127,487 @@
         width: 30%;   
     }
     #section-five .box-4 .counter_2{
-        margin-top:-100%;
-        margin-left: 260%;
-        font-size: 40px;
+        margin-top:-120%;
+        margin-left: 250%;
+        font-size: 27px;
     }
     #section-five .box-4 .progress_2{
           margin-top: -25%;
           width: 10%;
-          margin-left: 260%;
-          font-size: 14px;
+          margin-left: 250%;
+          font-size: 12px;
           
       }
       }
-      /*--============================for 360=====================================--*/
-      @media screen and (max-width: 360px){
-        #section-two{
-            margin-top: 5%;
-            height: auto;
-            width: 100%;
-            margin-left: 3%;
-            margin-right: 3%;
-            margin-bottom: 5% !important;
-            position: absolute;
-        
-        }
-        
-        #section-two .circle{
-            border-radius: 50%;
-            border:3px solid blue;
-            height: 60px;
-            width: 60px;
-            margin-top: 8%;
-        }
-        #section-two .circle .fas{
-            
-            height: 60px;
-            width: 60px;
-            font-size: 25px;
-            margin-top: 30%;
-            text-align: center;
-            justify-content: center;
-            color: blue;
-        
-        }
-        #section-two h1{
-            margin-top: -15%;
-            margin-left: 18%;
-            font-size: 22px;
-            
-        }
-        #section-two p{
-            margin-left: 18%;
-            width: 48%;
-            font-size: 14px;
-        }
-        #section-two .fas:hover{
-            color: white !important;
-        }
-        #section-two .circle:hover{
-            border:3px solid blue;
-            background-color: blue;
-        
-        }
-        /*-====================section-five====================*/
-        #section-five{
-            margin-top: 5%;
-            width: 100%;
-            height: 20vh;
-        
-        }
-        /*============================box-1===============*/
-        #section-five .box-1{
-            margin-left: 7%;
-        }
-        #section-five .box-1 h1{
-            margin-top: 10%;
-            font-size: 10px;
-        }
-        #section-five .box-1 h2{
-            font-size: 20px;
-        }
-        
-        /*=======================box-3=================*/
-          #section-five .box-3{
-            height:20vh ;
-            width: 30%;
-            
-        }
-        #section-five .box-3 .counter_1{
-            margin-top:-30% ;
-            margin-left: 130%;
-            font-size: 27px;
-        }
-        #section-five .box-3 .progress_1{
-              margin-top: -20%;
-              width: 10%;
-              margin-left: 135%;
-              font-size: 12px;
-          }
-          /*==============================box-4====================*/
-          #section-five .box-4{
-            height:20vh;
-            width: 30%;   
-        }
-        #section-five .box-4 .counter_2{
-            margin-top:-120%;
-            margin-left: 250%;
-            font-size: 27px;
-        }
-        #section-five .box-4 .progress_2{
-              margin-top: -25%;
-              width: 10%;
-              margin-left: 250%;
-              font-size: 12px;
-              
-          }
-    
 
+    
+/*-========================footer-page=====================*/
+/* -----------footer--------- */
+footer{
+    width: 100%;
+    background-color:#26272b;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+  .sec-2{
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    padding: 30px 10px;
+  }
+  .about-sec{
+    width: 40%;
+  }
+  .sec-2 .ha{
+    text-align: left;
+  }
+  .sec-2 h2{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* padding-bottom: 10px; */
+  }
+  .about-sec p{
+    text-align: justify;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.884);
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .sec-2 ul{
+    list-style: none;
+  }
+  .sec-2 ul li{
+    padding: 5px;
+    display: block;
+    text-align:left;
+    color: rgba(255, 255, 255, 0.884);
+    /* font-weight: 500; */
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none !important;
+    color:white !important;
+  }
+  .sec-2 a:hover{
+    color: #e84545 !important;
+  }
+  
+  .sec-2 h2::after{
+    content: '';
+    background-color:#e84545;
+    /* position: relative; */
+    width: 0;
+    height: 3px;
+    display: block;
+    transition: all .3s;
+    left: 0px;
+    top: -10px;
+  }
+  .sec-2 h2:hover::after{
+    width: 60px;
+  }
+  span{
+    color: white;
+  }
+  i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+  }
+  .sec-3 h2{
+    color:white;
+    font-size: 26px;
+    padding: 0px;
+  }
+  .sec-3 a{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(238, 29, 29, 0.842);
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .sec-3 a:hover{
+    background-color:orange;
+    box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
+    text-shadow: 2px 1px white;
+    color: rgb(15, 15, 15)!important;
+  }
+  hr{
+    opacity: 0.2;
+  }
+  .sec-4{
+    display: flex;
+    justify-content: center;
+    /* padding: 5px; */
+  }
+  .sec-4 ul{
+    list-style: none;
+    margin: 20px;
+  }
+  .sec-4 ul li{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 50% 50% 50% 70% / 50% 50% 70% 60%;
+    margin-right: 20px;
+    box-shadow:4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+  
+  }
+  .sec-4 ul li i{
+    color:white;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .sec-4 ul li:nth-child(1){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(2){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(3){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(4){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(5){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(1):hover{
+    background-color:#35559b;
+  }
+  .sec-4 ul li:nth-child(2):hover{
+    background-color:#2fa3fc;
+  }
+  .sec-4 ul li:nth-child(3):hover{
+    background-color:#e24833;
+  }
+  .sec-4 ul li:nth-child(4):hover{
+    background-color:#0382c7;
+  }
+  .sec-4 ul li:nth-child(5):hover{
+    background-color:#1a1c22;
+  }
+  .sec-5{
+    width: 100%;
+    padding: 10px;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: black;
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 1px black;
+    color: rgb(228, 227, 227);
+  }
+  
+  /* --------------First breakpoint 1000px------------ */
+  @media (max-width:1000px){
+  
+    footer{
+        width: 100%;
+        background-color:#26272b;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .sec-2{
+        display: flex;
+        justify-content: space-between ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px 10px;
+    }
+    .about-sec{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sec-2 h2{
+        font-size: 20px;
+        color:white;
+        text-transform: uppercase;
+        /* padding-bottom: 10px; */
+    }
+    .about-sec p{
+        text-align: justify;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.884);
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .sec-2 ul{
+        list-style: none;
+    }
+    .sec-2 ul li{
+        padding: 5px;
+        display: block;
+        text-align:left;
+        color: rgba(255, 255, 255, 0.884);
+        /* font-weight: 500; */
+        font-size: 16px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .sec-2 a:hover{
+        color: #e84545;
+    }
+    
+    .sec-2 h2::after{
+        content: '';
+        background-color: #e84545;
+        /* position: relative; */
+        width: 0;
+        height: 3px;
+        display: block;
+        transition: all .3s;
+        left: 0px;
+        top: -10px;
+    }
+    .sec-2 h2:hover::after{
+        width: 60px;
+    }
+    span{
+        color:white;
+    }
+    i{
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .sec-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .sec-3 h2{
+        color:white;
+        font-size: 24px;
+        padding: 0px;
+    }
+    .sec-3 a{
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 20px;
+        color: white;
+        background-color: rgba(238, 29, 29, 0.842);
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .sec-3 a:hover{
+        background-color:orange;
+        box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
+        text-shadow: 2px 1px rgb(255, 255, 255);
+        color: rgb(228, 227, 227);
+    }
+    hr{
+        opacity: 0.2;
+    }
+    .sec-4{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .sec-4 ul{
+        list-style: none;
+        margin: 20px;
+    }
+    .sec-4 ul li{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        background-color: #46616d;
+        border-radius: 50% 50% 50% 70% / 50% 50% 70% 60%;
+        margin-right: 20px;
+    }
+    .sec-4 ul li i{
+        color: white;
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .sec-5{
+        width: 100%;
+        padding: 20px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        background: black;
+        color:rgba(228,227,227);
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 2px 1px rgb(0, 0, 0);
+    }
+    .sec-5 a{
+        text-decoration: none;
+        color:white;
+    }
+  }
+  
+  
+  /* ------------------second breakpoint------------------ */
+  @media (max-width: 600px){
+    footer{
+        width: 100%;
+        background-color: #26272b;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .sec-2{
+        display: flex;
+        justify-content: space-between ;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .about-sec{
+        width: 100%;
+    }
+    .sec-2 h2{
+        font-size: 20px;
+        color:white;
+        text-transform: uppercase;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .about-sec p{
+        text-align: justify;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.884);
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .sec-2 ul{
+        list-style: none;
+    }
+    .sec-2 ul li{
+        padding: 5px;
+        font-size: 16px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .sec-2 h2::after{
+        visibility: hidden;
+        z-index: -100
+    }
+    span{
+        color:white;
+    }
+    i{
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .sec-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .sec-3 h2{
+        color:white;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .sec-3 a{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(238, 29, 29, 0.842);
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .sec-3 a:hover{
+        background-color:orange;
+        box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
+        text-shadow: 2px 1px rgb(255, 255, 255);
+        color: rgb(228, 227, 227);
+    }
+    hr{
+        opacity: 0.2;
+    }
+    .sec-4{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .sec-4 ul{
+        list-style: none;
+        margin: 15px;
+    }
+    .sec-4 ul li{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        /* background-color: #46616d; */
+        border-radius: 50% 50% 50% 70% / 50% 50% 70% 60%;
+        margin-right: 5px;
+        box-shadow:4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+    }
+    .sec-4 ul li i{
+        color: white;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .sec-5{
+        width: 100%;
+        padding: 20px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        background: black;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        text-shadow: 2px 1px black;
+        color: rgb(228, 227, 227);
+    }
+    .sec-5 a{
+        text-decoration: none;
+        color: white;
+    }
+    .link-1,.link-2 , .link-3{
+        text-align: center!important;
+    }
+    .link-1 ul li a,
+    .link-2 ul li a, 
+    .link-3 li{
+        display: block;
+        text-align: center!important;
+    }
+    .sec-2 .ha{
+        text-align: center;
+    }
+  }
+     

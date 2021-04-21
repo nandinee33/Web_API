@@ -1,0 +1,219 @@
+        /* -------Navigation Bar------- */
+        #nav-bar
+        {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar-brand img
+        {
+            height: 40px;
+            padding-left: 30px;
+        }
+        .navbar-nav li
+        {
+            padding: 0 10px;
+        }
+        .navbar-nav li a
+        {
+            float: right;
+            text-align: left;
+        }
+        #nav-bar ul li a:hover
+        {
+            color: #ff9800!important;
+        }
+        .navbar
+        {
+            background:#26272b;
+        }
+        .navbar-toggler
+        {
+            border: none!important;
+        }
+        .nav-link
+        {
+            color:white!important;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        /* -------Navigation Bar------- */
+
+
+        /* -----------footer--------- */
+footer{
+    margin-top: 5%;
+    width: 100%;
+    background-color:#26272b;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sec-2{
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    padding: 30px 10px;
+  }
+  .about-sec{
+    width: 40%;
+  }
+  .sec-2 .ha{
+    text-align: left;
+  }
+  .sec-2 h2{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* padding-bottom: 10px; */
+  }
+  .about-sec p{
+    text-align: justify;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.884);
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .sec-2 ul{
+    list-style: none;
+  }
+  .sec-2 ul li{
+    padding: 5px;
+    display: block;
+    text-align:left;
+    color: rgba(255, 255, 255, 0.884);
+    /* font-weight: 500; */
+    font-size: 16px;
+  }
+   a{
+    text-decoration: none !important;
+    color:white !important;
+  }
+  .sec-2 a:hover{
+    color: #e84545 !important;
+  }
+  
+  .sec-2 h2::after{
+    content: '';
+    background-color:#e84545;
+    /* position: relative; */
+    width: 0;
+    height: 3px;
+    display: block;
+    transition: all .3s;
+    left: 0px;
+    top: -10px;
+  }
+  .sec-2 h2:hover::after{
+    width: 60px;
+  }
+  span{
+    color: white;
+  }
+  i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sec-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+  }
+  .sec-3 h2{
+    color:white;
+    font-size: 26px;
+    padding: 0px;
+  }
+  .sec-3 a{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(238, 29, 29, 0.842);
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .sec-3 a:hover{
+    background-color:orange;
+    box-shadow: 0px 0px 4px 0px rgb(122, 120, 120);
+    text-shadow: 2px 1px white;
+    color: rgb(15, 15, 15)!important;
+  }
+  hr{
+    opacity: 0.2;
+  }
+  .sec-4{
+    display: flex;
+    justify-content: center;
+    /* padding: 5px; */
+  }
+  .sec-4 ul{
+    list-style: none;
+    margin: 20px;
+  }
+  .sec-4 ul li{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 50% 50% 50% 70% / 50% 50% 70% 60%;
+    margin-right: 20px;
+    box-shadow:4px 4px 3px 0px rgba(50, 50, 50, 0.75);
+  
+  }
+  .sec-4 ul li i{
+    color:white;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .sec-4 ul li:nth-child(1){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(2){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(3){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(4){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(5){
+    background-color:#424242;
+  }
+  .sec-4 ul li:nth-child(1):hover{
+    background-color:#35559b;
+  }
+  .sec-4 ul li:nth-child(2):hover{
+    background-color:#2fa3fc;
+  }
+  .sec-4 ul li:nth-child(3):hover{
+    background-color:#e24833;
+  }
+  .sec-4 ul li:nth-child(4):hover{
+    background-color:#0382c7;
+  }
+  .sec-4 ul li:nth-child(5):hover{
+    background-color:#1a1c22;
+  }
+  .sec-5{
+    width: 100%;
+    padding: 10px;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: black;
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 1px black;
+    color: rgb(228, 227, 227);
+  }
+  
