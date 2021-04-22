@@ -40,6 +40,10 @@
             font-weight: 600;
             font-size: 16px;
         }
+        .logout li a {
+            background-color: #f50202;
+            border-radius: 10px;
+        }
         /* -------Navigation Bar------- */
 
 

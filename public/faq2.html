@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Displays site properly based on user's device -->
+    <title>FAQ Accordion Card</title>
+
+    <link rel="stylesheet" href="faq.css">
+
+
+    <!-- Link of CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--------Google font link-------->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- Link of Fontawsm CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+
+</head>
+<body>
+
+<!-- Navigation Bar start -->
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="image/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="our_initiatives2.html">INITIATIVE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">WEB API</a>
+                </li>
+                <div class="logout">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">LOGOUT</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</section>
+    <!-- Navigation Bar end -->
+
+
+
+
+    <!-- FAQ PAGE START -->
+    <section class="faqcard">
+        <main class="wrapper">
+            <div class="image__wrapper">
+                <div class="image__wrapper_inner"></div>
+                <img class="box" src="../image/faq%20image/illustration-box-desktop.svg" alt="box">
+            </div>
+
+            <div class="accordion__wrapper">
+                <h1 class="title__accordion">FAQ</h1>
+                <div class="questions__accordions">
+                    <div class="question-answer__accordion">
+                        <div class="question">
+                            <h3 class="title__question">
+                                How to get an API key?
+                            </h3>
+                            <img src="../image/faq%20image/icon-arrow-down.svg" >
+                        </div>
+                        <div class="answer">
+                            1. Sign up and get an API key (APPID) on your account page.
+
+                            2.After verification,  find our welcome email that contains your API key and information.
+
+                        </div>
+                    </div>
+
+                    <div class="question-answer__accordion">
+                        <div class="question">
+                            <h3 class="title__question">
+                                Do you offer student discounts?
+                            </h3>
+                            <img src="../image/faq%20image/icon-arrow-down.svg" >
+                        </div>
+                        <div class="answer ">
+                            we don't offer student discounts. Please use the free plan. From time to time, we offer various promotions, so keep an eye out for those!
+                        </div>
+                    </div>
+
+                    <div class="question-answer__accordion">
+                        <div class="question">
+                            <h3 class="title__question">
+                                How many keys can I create?
+
+                            </h3>
+                            <img src="../image/faq%20image/icon-arrow-down.svg" >
+                        </div>
+                        <div class="answer ">
+                            You can create as many keys as you need. The total number of API calls is accumulated from all the API keys that belong to your account.
+                        </div>
+                    </div>
+
+                    <div class="question-answer__accordion">
+                        <div class="question">
+                            <h3 class="title__question">
+                                What is the format of the API response?
+                            </h3>
+                            <img src="../image/faq%20image/icon-arrow-down.svg" >
+                        </div>
+                        <div class="answer ">
+                            The JSON format is used by default. To get data in the XML or HTML format, just use “xml” or “html” for the mode parameter.
+                        </div>
+                    </div>
+
+                    <div class="question-answer__accordion">
+                        <div class="question">
+                            <h3 class="title__question">
+                                Why are some parameters missing in the API response?
+                            </h3>
+                            <img src="../image/faq%20image/icon-arrow-down.svg" >
+                        </div>
+                        <div class="answer ">
+                            Only the actually measured or calculated data is displayed in an API response.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- FAQ PAGE END-->
+
+
+    <!-- -------------------------Footer start------------------------- -->
+    <footer>
+
+        <section class="sec-2">
+            <section class="about-sec">
+                <h2 class="ha">About</h2>
+                <p>
+                    Web API (Application Programming Interface) is used for helping the software components with each other. ASP.NET Web API is a framework that makes it easy to build HTTP Services that reach a broad range of clients, including browsers and mobile devices. Using ASP.NET, web API can communicate with different devices from the same database.In Web API, we use default action methods. Get, Post, Put, and Delete are four default action methods. When we add new Web API empty controller in our project, the above mentioned action methods are added by default along with some overloaded methods.
+                </p>
+            </section>
+
+            <section class="link-1">
+                <h2>Catagories</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Api</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Initiatives</a></li>
+                </ul>
+            </section>
+
+            <section class="link-2">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signin</a></li>
+                </ul>
+            </section>
+
+            <section class="link-3">
+                <h2>Get in touch With us</h2>
+                <ul>
+                    <li><i class="fa fa-home"></i>  <span>GLAU, Mathura India</span></li>
+                    <li><i class="fa fa-envelope"></i>  <span>stuapi@gmail.com</span></li>
+                    <li><i class="fa fa-phone-square"></i>  <span>12131547046</span></li>
+                    <li><i class="fa fa-facebook-official"></i>  <span>Webstu Api</span></li>
+                </ul>
+            </section>
+        </section>
+
+        <hr width="100%" noshade="">
+        <section class="sec-3">
+            <h2>FOLLOW US ON</h2>
+        </section>
+        <hr width="100%" noshade="">
+
+        <section class="sec-4">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i> </a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="sec-5">
+            <div class="copyright">
+                <p>
+                    Copyright &copy; 2021 All Rights Are Reserved
+
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!-- ---------------------------Footer end--------------------------- -->
+
+    <script src="faq.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 const express =require("express");
-require("../src/db/conn");
+require("./db/conn");
 const cors=require('cors');
-const StudentRanking =require("../src/models/student");
+const StudentRanking =require("./models/student");
 
 
 const app=express();

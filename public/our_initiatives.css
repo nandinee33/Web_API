@@ -44,6 +44,17 @@
     font-weight: 600;
     font-size: 16px;
 }
+.login li a {
+    background-color: deepskyblue;
+    border-radius: 10px;
+}.signup li a {
+     background-color: yellowgreen;
+     border-radius: 10px;
+ }
+.logout li a {
+    background-color: #f50202;
+    border-radius: 10px;
+}
 /* -------Navigation Bar------- */
 
 

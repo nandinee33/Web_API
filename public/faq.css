@@ -41,6 +41,17 @@
     font-weight: 600;
     font-size: 16px;
 }
+.login li a {
+    background-color: deepskyblue;
+    border-radius: 10px;
+}.signup li a {
+     background-color: yellowgreen;
+     border-radius: 10px;
+ }
+.logout li a {
+    background-color: #f50202;
+    border-radius: 10px;
+}
 /* -------Navigation Bar------- */
 
 
@@ -86,7 +97,7 @@ html {
   display: grid;
   grid-template-columns: 400px 1fr;
   grid-gap: 6rem;
-  background-image: url(bg-pattern-desktop.svg);
+  background-image: url(image/faq image/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: 1260% 65%;
 }
@@ -125,14 +136,14 @@ html {
 }
 .title__accordion {
   font-size: 3rem;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .title__question {
   font-weight: 400;
   font-size: 1.2rem;
-  color: (var(--veryDarkGrayBlue));
-  margin: 1.4rem 0rem;
+  color: #4A4B5E;
+  margin: 1.4rem 0;
 }
 
 .question {
@@ -155,7 +166,7 @@ html {
 }
 
 .image__wrapper_inner {
-  background: url("./image/faq image/illustration-woman-online-desktop.svg");
+  background: url("image/faq image/illustration-woman-online-desktop.svg");
   height: 100%;
   background-repeat: no-repeat;
   background-position: 120% center;
@@ -178,7 +189,7 @@ html {
     height: 530px;
   }
   .image__wrapper {
-    background: url("./image/faq image/bg-pattern-mobile.svg");
+    background: url("image/faq image/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: center 590%;
   }
@@ -526,7 +537,7 @@ hr{
       justify-content: center;
       padding: 15px;
       background: black;
-      color:rgba(228,227,227);
+      color: rgb(227, 227, 227);
       font-size: 20px;
       text-align: center;
       text-shadow: 2px 1px rgb(0, 0, 0);
