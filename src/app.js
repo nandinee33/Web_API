@@ -1,9 +1,11 @@
 const express =require("express");
 require("../src/db/conn");
-
+const cors=require('cors');
 const StudentRanking =require("../src/models/student");
 
+
 const app=express();
+app.use(cors());
 const port = process.env.PORT ||3000;
 
 app.use(express.json());
@@ -70,6 +72,7 @@ app.delete("/student/:id",async(req,res)=>{
         res.status(500).send(e);
     }
 })
+
 
 app.listen(port,()=>{
     console.log(`connection is live at port no. ${port}`);

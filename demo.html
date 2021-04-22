@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+    
+    
+    <style>
+        .heading h1{
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        .card{
+            border:2px solid black;
+           text-align: center;
+           
+        }
+       .card-link a{
+            background-color: #f44336;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+        }
+    </style>
+
+</head>
+<body>
+   
+    
+    
+    <div class="heading"><h1>Delete Any Record</h1></div>
+        <div class="posts-list row">
+      
+    </div></div>
+
+    <script>
+        
+        const postsList =document.querySelector('.posts-list');
+        const addPostForm =document.querySelector('.add-post-form');
+      
+        let output='';
+
+        const renderPosts =(posts) =>{
+            posts.forEach(post=>{
+               output +=` 
+               <div class="card mt-4 col-md-6 bg-ligt">
+           <div class="card-body" data-id=${post._id}>
+            <p class="card-text2">${post.universityrollno}</p>
+            <p class="card-text">${post.name}</p>
+            <p class="card-text1">${post.section}</p>
+            <p class="card-subtitle ">${post.emailid}</p>
+             <p class="card-title">${post.CPI}</p>
+             
+             
+           
+            
+            
+             <a href="#" class="card-link" id="delete-post">delete</a>
+           </div>
+         </div>
+         `;
+           });
+           postsList.innerHTML=output;
+      
+       
+
+        }
+       const url='http://localhost:3000/student';
+        //get-read the studentdetails
+        //method:get
+        fetch(url)
+        .then(res =>res.json())
+        .then(data =>renderPosts(data))
+
+
+        postsList.addEventListener('click',(e)=>{
+           e.preventDefault();
+           let delButtonIsPressed=e.target.id =='delete-post';
+           let editButtonIsPressed=e.target.id =='edit-post';
+          
+           let id=e.target.parentElement.dataset.id;
+
+           //delete-Remove the existing post
+           //method:DELETE
+           if(delButtonIsPressed){
+              fetch(`${url}/${id}`,{
+                  method:'DELETE',
+              })
+              .then(res =>res.json())
+              .then(()=>location.reload())
+           }
+});
+
+         
+               
+
+            
+            
+            
+            //reset input field to empty
+            titleValue.value='';
+            titleValue1.value='';
+            titleValue2.value='';
+            titleValue3.value='';
+
+            titleValue4.value='';
+        
+        
+        
+        </script>
+
+      
+</body>
+</html>
