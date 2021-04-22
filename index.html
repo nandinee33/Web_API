@@ -230,7 +230,25 @@ h2{
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+   <h3><u>JSON representation</u></h3>
+   <p>{
+    
+    "name": string,
+    "universityrollno": number,
+   
+    "CPI": number,
+   
+    
+}</p>
+<h3><u>Fields</u></h3>
+
+<h5>studentname</h5>
+<p>string</p>
+<h5>universityrollno</h5>
+<p>number</p>
+
+<h5>studentCPI</h5>
+<p>string</p>
   </div>
 
 </div>
@@ -331,7 +349,31 @@ window.onclick = function(event) {
 <!-- Modal content -->
 <div class="modal-content">
   <span class="close1">&times;</span>
-  <p>Some text in the Modal..</p>
+  <h3><u>JSON representation</u></h3>
+  <p>{
+   ""_id": string,
+   "name": string,
+   "universityrollno": number,
+   "emailid": string,
+   "CPI": number,
+   "section": string,"
+   
+  
+   
+}</p>
+<h3><u>Fields</u></h3>
+<h5>studentid</h5>
+<p>string</p>
+<h5>studentname</h5>
+<p>string</p>
+<h5>universityrollno</h5>
+<p>number</p>
+<h5>studentemailid</h5>
+<p>string</p>
+<h5>studentCPI</h5>
+<p>number</p>
+<h5>studentsection</h5>
+<p>string</p>
 </div>
 
 </div>
@@ -344,11 +386,18 @@ window.onclick = function(event) {
       <thead>
         <tr>
           <th>id</th>
+          <th>University rollno</th>
           <th>student name</th>
           <th>
             CPI
           </th>
-          <th>University rollno</th>
+          <th>
+            Emailid
+          </th>
+          <th>
+            Section
+          </th>
+         
         </tr>
       </thead>
       <tbody id="data1">
@@ -370,9 +419,13 @@ window.onclick = function(event) {
             data1.forEach((u)=>{
               temp +="<tr>";
                 temp +="<td>" +u._id+"</td>";
+                temp +="<td>" +u.universityrollno+"</td>";
                 temp +="<td>" +u.name+"</td>";
                 temp +="<td>" +u.CPI+"</td>";
-                temp +="<td>" +u.universityrollno+"</td><tr>";
+                temp +="<td>" +u.emailid+"</td>";
+                temp +="<td>" +u.section+"</td><tr>";
+                
+                
             })
             //----close for loop
             document.getElementById("data1").innerHTML=temp;
@@ -427,8 +480,10 @@ if (event.target == modal) {
      <!-- Modal content -->
      <div class="modal-content">
        <span class="close2">&times;</span>
-       <p>Some text in the Modal..</p>
-     </div>
+       <ul>
+       <li>For Deleting record click on delete button then delete the record.</li>
+       <li>For Editing record click on edit button then go to postman add request "POST" and then edit record from their respective id's.</li>
+     </ul></div>
      
      </div>
      <!-- The Modal ends-->
@@ -489,7 +544,7 @@ if (event.target == modal) {
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Faq</a></li>
                 <li><a href="#">Api</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Initiatives</a></li>
             </ul>
         </section>
@@ -497,7 +552,7 @@ if (event.target == modal) {
         <section class="link-2">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#">Offers</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Login</a></li>
