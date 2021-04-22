@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
   <style>
     table,td,th{
       border:1px solid black;
@@ -59,6 +59,7 @@
  
   cursor: pointer;
 }
+
 
 
 .button1 {font-size: 10px;}
@@ -160,6 +161,7 @@ h1{
 }
 h2{
   text-align: center;
+  color: red;
 }
 
 .edit a {
@@ -177,6 +179,7 @@ h2{
  
 }
 
+
 .edit a:hover{
   background-color: red;
 }
@@ -185,22 +188,23 @@ h2{
 <body>
 
    <!-- Navigation Bar start -->
+
    <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="image.jpg" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="./image/logo.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="Homepage.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="our_initiatives.html">INITIATIVE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">LOGIN</a>
@@ -214,10 +218,9 @@ h2{
        <!-- Navigation Bar end -->
 
   
- 
-  <div class="container">
+ <br>
     <h1>StudentDetail API</h1>
-    <h2>This is the url for API:<a href="#" >http://localhost:3000/student</a></h2><br>
+    <h2>This is the url of StudentDetail API: http://localhost:3000/student</h2><br>
     <h4>Student Names with their cpi and universityrollno</h4>
    <div class="center" ><button class="button button1" id="myBtn">API docs</button></div>
    
@@ -233,8 +236,8 @@ h2{
 </div>
 <!-- The Modal ends-->
     
-    <div class="container">
-     <br><br>
+   
+     <br>
      <table id="myTable">
         <thead>
           <tr>
@@ -251,8 +254,8 @@ h2{
         <tbody id="data">
     
         </tbody>
-      </table>
-    </div>
+      </table><br><br>
+    
   <script>
     
     
@@ -316,7 +319,7 @@ window.onclick = function(event) {
      </script>
 
 
-<div class="container">
+
   
   <h4>Student Names with their id,cpi and universityrollno</h4>
  <div class="center"> <button class="button button1" id="myBtn1">API docs</button></div><br>
@@ -334,8 +337,8 @@ window.onclick = function(event) {
 </div>
 <!-- The Modal ends-->
  
-<br><br>
-  <div class="container1">
+
+  
 
     <table id="myTable1">
       <thead>
@@ -351,8 +354,8 @@ window.onclick = function(event) {
       <tbody id="data1">
   
       </tbody>
-    </table>
-  </div>
+    </table><br><br>
+ 
 <script>
   
   
